@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "./padariaTechPlus.js" async></script>
+</head>
+<body>
+    <p> 1) Para iniciar, insira o valor do produto e aperte "Enter" ou clique no botão Enter. <br></br>
+        2) Insira o valor recebido pelo cliente no campo correspondente e aperte "Enter." <br></br>
+        2) Para finalizar, digite "0", "-" e aperte "Enter" <br></br>
+        3) Para voltar a editar, aperte "0", "+" e aperte "Enter".</p>
+
+    <span class = "unmodifiable" id = "nomedoProduto" >
+        <input class = "codProd" name="nomeProduto" id="nomeProduto" type= "text" readonly/>
+        <input class = "entrada" name="produto" id="valorProduto" type= "number" placeholder= "Preço do Produto"/>
+        <button type = "submit" name = "enviarValor" id="enviarValor"> Enter </button> 
+    </span>
+
+    
+    
+    
+    <span  class = "soma" id = "valortotal" name ="valortotal" type = "number" >
+        <p>
+            Total:     
+        </p>
+    <input id = "Total" type = "number"  readonly/>
+    </span>
+
+    <span>
+        <p id = "recebimento">
+            Recebido:
+        </p>
+        <input class  = "recebimento" name = "recebimento" id = "valorRecebido" type = "number" placeholder = "0.00"/>
+        <p id = "recebimentoInvalido" type = "text" style="display:none;" ></p>
+    </span>    
+    
+    <span>
+        <p id = "troco">
+            Troco:
+        </p>
+        <input id = "valorTroco" type = "number" placeholder = "ValorTroco"/>
+    </span>
+
+    <div>
+        <div  class = "recibo" id = "recibo" name ="recibo" type = "text" >
+             <table id="receiptTable">
+                 <thead>
+                   <tr>
+                     <th id = "codProduto">
+                        Produto
+                    </th>
+                     <th id = "precoIndividualProduto">
+                        Preço
+                     </th>
+                </thead>
+                
+                <tr id="imprimirConteudo"></tr>                   
+                   </tr>
+                 <tbody>
+                 </tbody>
+               </table>
+            <p id = "imprimirTotal"></p>
+            <p id = "imprimirDinheiro"></p>
+            <p id = "imprimirTroco"></p>
+    </div>
+
+</body>
+</html>

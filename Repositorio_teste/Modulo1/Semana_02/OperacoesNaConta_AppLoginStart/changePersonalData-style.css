@@ -1,0 +1,38 @@
+div.container{
+    background-color: #ab5faf;
+    width : 600px;
+    height: 800px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position : relative;
+}
+
+
+div.profimg-container{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 25px;
+    display:inline-block;
+    overflow:hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+img.rounded{
+    display:flex;
+    height: 50%;
+    width: 50%;
+    
+};
+
+div.personalInfo{
+    background-color: aliceblue;
+}

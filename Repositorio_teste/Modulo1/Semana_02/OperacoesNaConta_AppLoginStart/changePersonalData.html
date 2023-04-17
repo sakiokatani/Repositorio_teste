@@ -1,0 +1,112 @@
+/Faça com que o usuário possa alterar informações da conta, que serão salvas em localStorage, como url da imagem de perfil, e-mail e nome./
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" type = "text/css" href = "changePersonalData-style.css">
+    <script src="changePersonalData-script.js" async></script>
+</head>
+<body>
+    <div class = "container" id = "container">
+        <div id = "header" class = "header" >
+        <h1> Account</h1>
+        <p>In order to update your profile, please enter information and click "submit".</p>
+        </div>
+        
+        <div class = "profimg-container" id = "generic-profimg">
+            <img class = "rounded" id = "genericimg" src="https://www.pngkit.com/png/detail/115-1150342_user-avatar-icon-iconos-de-mujeres-a-color.png"  alt="User Avatar Icon - Iconos De Mujeres A Color Png@pngkit.com"/ > 
+            <input type="file" id="profile-image-input">
+          </div>
+
+
+        <div id = "personalInfo" class = "personalInfo">
+            <p>Name:
+                <span id = "standard-name"></span> 
+                <button class = "editInformation" id = "changeName" >
+                    Edit
+                </button>
+            </p>
+             <span id = "nameInputBox" style = "display: none" >
+                <input id = "name"  class = "personalInfo" type = "text" placeholder = "Name" />
+            </span>
+             
+            
+            
+            <p>Surname:
+                <span id = "standard-surname"></span> 
+                <button class = "editInformation" id = "changeSurname" >
+                    Edit
+                </button>
+            </p> 
+                <span id = "surnameInputBox" style = "display: none">
+                    <input id = "surname" class = "personalInfo" type = "text" placeholder = "Surname"/>
+                </span>
+            
+            
+            <p>Birthdate: 
+                <span id = "standard-birthdate"></span> 
+                <button class = "editInformation" id = "changeBirthdate" >
+                    Edit
+                </button>
+            </p>
+                <p>
+                <span id = "birthDateInputBox" style = "display: none">
+                <input id = "birthdate" class = "personalInfo" type = "date" placeholder = "MM/DD/YY"/>
+            </p>
+
+
+            <p>E-mail: 
+                <span id = "standard-email"></span> 
+                <button class = "editInformation" id = "changeEmail" >
+                    Edit
+                </button>
+            </p>
+                <p>
+                <span id = "EmailInputBox" style = "display: none">
+                <input id = "email" class = "personalInfo" type = "text" placeholder = "valid@email.com"/>
+                </span>
+            </p>
+                
+
+            </p>
+            <p>Phone Number: 
+                <span id = "standard-phone"></span> 
+                <button class = "editInformation" id = "changePhone" >
+                    Edit
+                </button>
+            </p>
+                <p>
+                <span id = "PhoneInputBox" style = "display: none">
+                <input id = "phone" class = "personalInfo" type = "text" placeholder = "Country Code + Area Code + Phone Number"/>
+                </span>
+            </p>
+
+
+            <p>Adress:
+                <span id = "standard-adress"></span> 
+                <button class = "editInformation" id = "changeAdress" >
+                    Edit
+                </button>
+            </p>
+                <p>
+                <span id = "addressInputBox" style = "display: none">
+                <input id = "adress" class = "personalInfo" type = "text" placeholder = "Your Adress"/>
+                </span>
+                </p>
+
+
+            <span class="btnspace">
+            <button type="button" id = "formsubmit-btn" onclick = "storeInput()"> Submit</button>
+            <button type = "button" id = "logout-btn">Lougout</button>
+            </span>
+        </div>
+
+    </div>
+    <h1>
+
+    </h1>
+</body>
+</html>
