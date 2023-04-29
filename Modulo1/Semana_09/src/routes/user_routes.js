@@ -1,22 +1,30 @@
 const express = require('express');
 //importanção da função router, já existente dentro do express
-const router = express.Router();
+const connectSequelize = require('../database');
+connectSequelize.sync({alter:true});
+const userRouter = express.Router();
+
+
 // const bodyParser = require('body-parser');
 const { handleUserCreation } = require('./user_routes/user_create');
 const { handleUserDeletion } = require('./user_routes/user_delete');
+const { handleUserUpdate } = require('./user_routes/user_update');
+// const { handleUserData } = require('./user_routes/user_data');
 
 
-
-router.use(express.json());
-
+userRouter.use(express.json());
 
 // Define HTTP routes
-router.get('/', (req, res) => {
+userRouter.get('/', (req, res) => {
     res.status(200).json({message: 'connection to root has been established.'});
 });
 
-router.post('/users', handleUserCreation);
+userRouter.post('/users', handleUserCreation);
 
-router.delete('/users/:id', handleUserDeletion);
+// userRouter.get('/users', handleUserData);
+
+userRouter.delete('/users/:id', handleUserDeletion);
+
+userRouter.put('/users/:id', handleUserUpdate);
     
-module.exports = router;
+module.exports = userRouter;

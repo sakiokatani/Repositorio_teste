@@ -46,7 +46,7 @@ async function handleUserCreation(req, res){
             return res.status(409).json({message: 'An account with this username already exists. Please enter a new username and try again.'});
         
         } else if(filterUserByEmail !== null){
-            return res.status(409).json({message: 'An account with this e-mail already exists. Please enter a new username and try again.'});
+            return res.status(409).json({message: 'An account with this e-mail already exists.'});
         
         } else{
             const newUser = await User.create(userData);
