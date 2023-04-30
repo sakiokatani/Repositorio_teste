@@ -7,10 +7,12 @@ connectSequelize.sync({alter:true});
 async function handlePlacesUpdate(req, res){
 
     try{
-        const placeInDatabase = await Place.findByPK(req.params.id);
+        const placeInDatabase = await Place.findByPk(req.params.id);
+
         if(!placeInDatabase){
             return res.status(404).json({message: 'place not found'});
-        };
+        }else{
+            console.log("somethings wrong here")
         placeInDatabase.name = req.body.name;
         placeInDatabase.description = req.body.description;
         placeInDatabase.phone = req.body.phone;
@@ -18,7 +20,10 @@ async function handlePlacesUpdate(req, res){
 
         await placeInDatabase.save();
         res.json(placeInDatabase);
+        }
+
     }catch(error){
+        console.error(error);
         res.status(500).json({message: 'error updating data'})
     }
 }
