@@ -6,12 +6,7 @@ connectSequelize.sync({alter:true});
 
 async function handlePlacesDataById(req, res){
     try{
-        if(!req.params.id){
-    
-        res.status(404).json({message:"Place ID not found. Please check the ID and try again."});
-
-    }else{
-        filterPlacesById = await Place.findOne(
+            const filterPlacesById = await Place.findOne(
             {
             where:
             {
@@ -25,8 +20,6 @@ async function handlePlacesDataById(req, res){
         }else{
             res.status(200).json(filterPlacesById);
         }
-
-    }
 
 
     }catch(error){
