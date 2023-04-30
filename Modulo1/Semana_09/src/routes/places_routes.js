@@ -12,11 +12,14 @@ const {handlePlacesDeletion} = require('./places_routes/places_delete');
 const {handlePlacesUpdate} = require('./places_routes/places_update');
 
 
-placeRouter.get('/', (req, res)=>{
-    console.log('root connected');
-    res.json({mensagem:'Root connection established.'})
-})
-
+placeRouter.get('/', (req, res) => {
+        try{
+            res.status(200).json({message: 'connection to root has been established.'});
+        }catch(error){
+            console.error(error);
+            res.status(500).json({message: "Error connecting to the server"})
+        }
+    });
 placeRouter.post('/places', handlePlacesCreation);
 
 placeRouter.get('/places', handlePlacesDataAll);
