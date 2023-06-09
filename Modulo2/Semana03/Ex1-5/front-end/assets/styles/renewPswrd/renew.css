@@ -1,0 +1,115 @@
+body{
+    position:relative;
+    background-color: #F0F0F0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.d-flex{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 320px;
+    height: 320px;
+    background-color: none;
+    border-width: 3px;
+    border-radius: 2px;
+    align-items: center;
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.container{
+    position: absolute;
+    width: 320px;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    padding-left: 45px;
+}
+
+#container_header{
+    width: 320px;
+    height: 80px;
+}
+
+
+form fieldset {
+    position:absolute;
+    border-style: none;
+
+}
+
+form fieldset .user_input#email, 
+form fieldset .user_input#confirmEmail{
+    width: 260px;
+    height: 23px;
+    outline: none;
+    border-color: #EBF0FA;
+    border-width: 0.25px;
+    border-radius: 2px;
+    margin-bottom:13px;
+    margin-left: -15px;
+    
+}
+ 
+form fieldset .user_input.invalid#email,
+form fieldset .user_input.invalid#confirmEmail{
+border-color: red;
+}
+
+form fieldset .user_input.active#email,
+form fieldset .user_input.active#confirmEmail{
+box-shadow: 3px 3px 3px  rgba(185, 185, 185, 0.6)
+}
+
+form fieldset .user_input::placeholder{
+    color: #b4b6c1;
+    font-size: 11px;
+}
+
+h1{
+    font-size: 18px;
+    color: #2C2C2C;
+    text-align: center;
+    margin-bottom:5px;
+    margin-right: 60px;
+}
+
+p{
+    font-size: 12px;
+    text-align: justify; 
+    color: #B4B6C1;
+    margin-right: 60px;
+}
+
+.container .submitbtn{
+    position:absolute;
+    width: 260px;
+    height: 30px;
+    border-style: none;
+    border-radius: 6px;
+    background-color: #00A335;
+    bottom: 20px;
+    margin-left: 0px;
+    color: #ffffff;
+    font-weight: 530;
+}
+.container .submitbtn:hover{
+    background-color: rgb(0, 119, 38);
+    transform: scale(105%);
+    transition: 0.5s;
+}
+
+#resend{
+    color:#B4B6C1;
+    font-size: 12px;
+    position: absolute;
+    bottom: 40px;
+    margin-left: 0px;
+}
+
+#resend_email{
+    color: #00A335;
+    text-decoration: none;
+}
+

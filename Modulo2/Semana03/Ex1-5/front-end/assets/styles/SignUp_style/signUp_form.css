@@ -1,0 +1,60 @@
+
+form fieldset {
+    position:absolute;
+    border-style: none;
+
+}
+
+form fieldset .user_input#company_name, 
+form fieldset .user_input#cnpj,
+form fieldset .user_input#responsible_name{
+    width: 230px;
+    height: 23px;
+    outline: none;
+    border-color: #EBF0FA;
+    border-width: 0.25px;
+    border-radius: 2px;
+    margin-bottom:13px
+    
+}
+
+form fieldset .user_input#email,
+form fieldset .user_input#phone,
+form fieldset .user_input#pswrd,
+form fieldset .user_input#confirm_pswrd{
+    width: 110px;
+    height: 23px;
+    outline: none;
+    background-color: #ffffff;
+    border-color: #EBF0FA;
+    border-width: 0.25px;
+    border-radius: 2px;
+    margin-bottom:13px
+    
+}
+
+form fieldset .user_input.invalid#company_name,
+form fieldset .user_input.invalid#cnpj,
+form fieldset .user_input.invalid#responsible_name,
+form fieldset .user_input.invalid#email,
+form fieldset .user_input.invalid#phone,
+form fieldset .user_input.invalid#pswrd,
+form fieldset .user_input.invalid#confirm_pswrd{
+border-color: red;
+}
+
+form fieldset .user_input.active#company_name,
+form fieldset .user_input.active#cnpj,
+form fieldset .user_input.active#responsible_name,
+form fieldset .user_input.active#email,
+form fieldset .user_input.active#phone,
+form fieldset .user_input.active#pswrd,
+form fieldset .user_input.active#confirm_pswrd{
+box-shadow: 3px 3px 3px  rgba(185, 185, 185, 0.6)
+}
+
+form fieldset .user_input::placeholder{
+    color: #b4b6c1;
+    font-size: 11px;
+}
+

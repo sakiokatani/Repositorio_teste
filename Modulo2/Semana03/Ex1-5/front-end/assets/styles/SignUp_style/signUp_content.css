@@ -1,0 +1,48 @@
+h1{
+    font-size: 32px;
+    color: #2C2C2C;
+    text-align: center;
+    margin-bottom:5px;
+    margin-right: 60px;
+}
+
+p{
+    font-size: 12px;
+    text-align: center; 
+    color: #B4B6C1;
+    margin-right: 60px;;
+} 
+
+.container .submitbtn{
+    position:absolute;
+    width: 230px;
+    height: 30px;
+    border-style: none;
+    border-radius: 6px;
+    background-color: #00A335;
+    bottom: 20px;
+    margin-left: 15px;
+    color: #ffffff;
+    font-weight: 530;
+}
+
+.container .submitbtn:hover{
+    background-color: rgb(0, 119, 38);
+    transform: scale(105%);
+    transition: 0.5s;
+}
+
+
+span{
+    color:#B4B6C1;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 85px;
+}
+
+span a{
+    color: #00A335;
+    text-decoration: none;
+}
+

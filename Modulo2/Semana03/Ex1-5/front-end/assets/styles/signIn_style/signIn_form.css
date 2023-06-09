@@ -1,0 +1,32 @@
+form fieldset {
+    position:absolute;
+    border-style: none;
+
+}
+
+form fieldset .user_input#email, 
+form fieldset .user_input#pswrd{
+    width: 230px;
+    height: 23px;
+    outline: none;
+    border-color: #EBF0FA;
+    border-width: 0.25px;
+    border-radius: 2px;
+    margin-bottom:13px
+    
+}
+ 
+form fieldset .user_input.invalid#email,
+form fieldset .user_input.invalid#pswrd{
+border-color: red;
+}
+
+form fieldset .user_input.active#email,
+form fieldset .user_input.active#pswrd{
+box-shadow: 3px 3px 3px  rgba(185, 185, 185, 0.6)
+}
+
+form fieldset .user_input::placeholder{
+    color: #b4b6c1;
+    font-size: 11px;
+}

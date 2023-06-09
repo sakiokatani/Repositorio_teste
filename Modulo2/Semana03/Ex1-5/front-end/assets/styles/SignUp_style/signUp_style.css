@@ -1,0 +1,141 @@
+/* body{
+    position:relative;
+    background-color: #F0F0F0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container1{
+    position: absolute;
+    width: 320px;
+    height: 420px;
+    background-color: none;
+    border-width: 3px;
+    border-radius: 2px;
+    align-items: center;
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.container{
+    position: absolute;
+    width: 320px;
+    height: 380px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    align-items: center;
+    align-content: center;
+    padding-left: 45px;
+}
+
+#container_header{
+    width: 320px;
+    height: 80px;
+}
+
+h1{
+    font-size: 32px;
+    color: #2C2C2C;
+    text-align: center;
+    margin-bottom:5px;
+    margin-right: 60px;
+}
+
+p{
+    font-size: 12px;
+    text-align: center; 
+    color: #B4B6C1;
+    margin-right: 60px;;
+}
+
+form fieldset {
+    position:absolute;
+    border-style: none;
+
+}
+
+form fieldset .user_input#company_name, 
+form fieldset .user_input#cnpj,
+form fieldset .user_input#responsible_name{
+    width: 230px;
+    height: 23px;
+    outline: none;
+    border-color: #EBF0FA;
+    border-width: 0.25px;
+    border-radius: 2px;
+    margin-bottom:13px
+    
+}
+
+form fieldset .user_input#email,
+form fieldset .user_input#phone,
+form fieldset .user_input#pswrd,
+form fieldset .user_input#confirm_pswrd{
+    width: 110px;
+    height: 23px;
+    outline: none;
+    background-color: #ffffff;
+    border-color: #EBF0FA;
+    border-width: 0.25px;
+    border-radius: 2px;
+    margin-bottom:13px
+    
+}
+
+form fieldset .user_input.invalid#company_name,
+form fieldset .user_input.invalid#cnpj,
+form fieldset .user_input.invalid#responsible_name,
+form fieldset .user_input.invalid#email,
+form fieldset .user_input.invalid#phone,
+form fieldset .user_input.invalid#pswrd,
+form fieldset .user_input.invalid#confirm_pswrd{
+border-color: red;
+}
+
+form fieldset .user_input.active#company_name,
+form fieldset .user_input.active#cnpj,
+form fieldset .user_input.active#responsible_name,
+form fieldset .user_input.active#email,
+form fieldset .user_input.active#phone,
+form fieldset .user_input.active#pswrd,
+form fieldset .user_input.active#confirm_pswrd{
+box-shadow: 3px 3px 3px  rgba(185, 185, 185, 0.6)
+}
+
+form fieldset .user_input::placeholder{
+    color: #b4b6c1;
+    font-size: 11px;
+}
+
+.container .submitbtn{
+    position:absolute;
+    width: 230px;
+    height: 30px;
+    border-style: none;
+    border-radius: 6px;
+    background-color: #00A335;
+    bottom: 20px;
+    margin-left: 15px;
+    color: #ffffff;
+    font-weight: 530;
+}
+
+.container .submitbtn:hover{
+    background-color: rgb(0, 119, 38);
+    transform: scale(105%);
+    transition: 0.5s;
+}
+
+span{
+    color:#B4B6C1;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 85px;
+}
+
+span a{
+    color: #00A335;
+    text-decoration: none;
+}
+ */

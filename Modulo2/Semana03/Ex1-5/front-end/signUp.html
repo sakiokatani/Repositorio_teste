@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/scripts/index.js" defer></script>
+    <link  rel="stylesheet" href="./assets/styles/SignUp_style/signUp_container_style.css">
+    <link  rel="stylesheet" href="./assets/styles/SignUp_style/signUp_form.css">
+    <link  rel="stylesheet" href="./assets/styles/SignUp_style/signUp_content.css">
+    
+    <title>Document</title>
+
+</head>
+<body>
+    <div class = "container_d-flex">
+    <div class = "container">
+        <div id = "container_header">
+            <h1>Sign Up</h1>
+            <p>Insira seus dados para criar uma conta</p>
+        </div>
+        <div id = "user_inputs">    
+            <form>
+                <fieldset>
+                    <input class = "user_input" id="company_name" type="text" placeholder="Empresa"></input>
+                    <input class = "user_input" id="cnpj" type="number" placeholder="CNPJ" ></input>
+                    <input class = "user_input" id="responsible_name" type="text" placeholder="Responsável"></input>
+                    <input class = "user_input" id="email" type="email" placeholder="E-mail"></input>
+                    <input class = "user_input" id="phone" type="tel" placeholder="Telefone"></input>
+                    <input class = "user_input" id="pswrd" type="password" placeholder="Senha"></input>
+                    <input class = "user_input" id="confirm_pswrd" type="password" placeholder="Confirmar Senha"></input>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <button class= "submitbtn" type="submit" aria-label="Criar Conta" onclick="myDialog.close()">Criar Conta</button>   
+        </div>
+    </div>
+    <span id="realizar_login">Já possui uma conta? <a href="./signIn.html">Realizar Login</a></span>
+    
+    </div>
+    
+</body>
+</html>
